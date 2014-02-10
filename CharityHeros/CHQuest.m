@@ -9,6 +9,7 @@
 #import "CHQuest.h"
 
 @implementation CHQuest
+
 - (id)init
 {
     self = [super init];
@@ -22,4 +23,5 @@
     }
     return self;
 }
+
 @end

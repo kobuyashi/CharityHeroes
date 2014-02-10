@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface CHQuest : NSObject
+
 @property NSString *questDescription;
 @property int level;
 @property float percentComplete;
 @property BOOL isSequentialQuest;
 @property BOOL isUnorderedQuest;
+
 @end
