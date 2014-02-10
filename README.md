@@ -26,7 +26,7 @@ chmod +x ./add_upstream.sh
 ```
 
 ```
-clmod +x ./pull_upstream.sh
+chmod +x ./pull_upstream.sh
 ```
 
 * Run the add\_upstream.sh and pull\_upstream.sh scripts through the terminal.
