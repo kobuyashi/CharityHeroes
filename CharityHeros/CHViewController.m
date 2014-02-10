@@ -8,10 +8,6 @@
 
 #import "CHViewController.h"
 
-@interface CHViewController ()
-
-@end
-
 @implementation CHViewController
 
 - (void)viewDidLoad
