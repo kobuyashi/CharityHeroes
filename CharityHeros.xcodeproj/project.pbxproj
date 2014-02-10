@@ -21,6 +21,8 @@
 		98BCCDE818A5E2A500D0F88B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98BCCDCA18A5E2A500D0F88B /* UIKit.framework */; };
 		98BCCDF018A5E2A500D0F88B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98BCCDEE18A5E2A500D0F88B /* InfoPlist.strings */; };
 		98BCCDF218A5E2A500D0F88B /* CharityHerosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCCDF118A5E2A500D0F88B /* CharityHerosTests.m */; };
+		98BCCE0218A601A800D0F88B /* CHQuest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCCE0118A601A800D0F88B /* CHQuest.m */; };
+		98BCCE0518A6032000D0F88B /* CHTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCCE0418A6032000D0F88B /* CHTask.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		98BCCDED18A5E2A500D0F88B /* CharityHerosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CharityHerosTests-Info.plist"; sourceTree = "<group>"; };
 		98BCCDEF18A5E2A500D0F88B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98BCCDF118A5E2A500D0F88B /* CharityHerosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharityHerosTests.m; sourceTree = "<group>"; };
+		98BCCE0018A601A800D0F88B /* CHQuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHQuest.h; sourceTree = "<group>"; };
+		98BCCE0118A601A800D0F88B /* CHQuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHQuest.m; sourceTree = "<group>"; };
+		98BCCE0318A6032000D0F88B /* CHTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTask.h; sourceTree = "<group>"; };
+		98BCCE0418A6032000D0F88B /* CHTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		98BCCDCC18A5E2A500D0F88B /* CharityHeros */ = {
 			isa = PBXGroup;
 			children = (
+				98BCCDFB18A5FB1300D0F88B /* Quests */,
 				98BCCDD518A5E2A500D0F88B /* CHAppDelegate.h */,
 				98BCCDD618A5E2A500D0F88B /* CHAppDelegate.m */,
 				98BCCDD818A5E2A500D0F88B /* Main.storyboard */,
@@ -150,6 +157,17 @@
 				98BCCDEE18A5E2A500D0F88B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98BCCDFB18A5FB1300D0F88B /* Quests */ = {
+			isa = PBXGroup;
+			children = (
+				98BCCE0018A601A800D0F88B /* CHQuest.h */,
+				98BCCE0118A601A800D0F88B /* CHQuest.m */,
+				98BCCE0318A6032000D0F88B /* CHTask.h */,
+				98BCCE0418A6032000D0F88B /* CHTask.m */,
+			);
+			name = Quests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +218,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = UAT;
 				TargetAttributes = {
+					98BCCDC218A5E2A500D0F88B = {
+						DevelopmentTeam = VURNCC6F5E;
+					};
 					98BCCDE318A5E2A500D0F88B = {
 						TestTargetID = 98BCCDC218A5E2A500D0F88B;
 					};
@@ -251,6 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				98BCCDD318A5E2A500D0F88B /* main.m in Sources */,
+				98BCCE0218A601A800D0F88B /* CHQuest.m in Sources */,
+				98BCCE0518A6032000D0F88B /* CHTask.m in Sources */,
 				98BCCDD718A5E2A500D0F88B /* CHAppDelegate.m in Sources */,
 				98BCCDDD18A5E2A500D0F88B /* CHViewController.m in Sources */,
 			);
@@ -379,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CharityHeros/CharityHeros-Prefix.pch";
 				INFOPLIST_FILE = "CharityHeros/CharityHeros-Info.plist";
@@ -392,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CharityHeros/CharityHeros-Prefix.pch";
 				INFOPLIST_FILE = "CharityHeros/CharityHeros-Info.plist";
