@@ -22,11 +22,11 @@ cd CharityHeroes
 * Give execute permissions to add\_upstream.sh and pull\_upstream.sh using the following:
 
 ```
-chown +x ./add_upstream.sh
+chmod +x ./add_upstream.sh
 ```
 
 ```
-clown +x ./pull_upstream.sh
+clmod +x ./pull_upstream.sh
 ```
 
 * Run the add\_upstream.sh and pull\_upstream.sh scripts through the terminal.
