@@ -13,7 +13,7 @@
 {
     self = [super init];
     if (self) {
-        
+        self.servicePtrList = [[NSMutableDictionary alloc] init];
     }
     return self;
 }
@@ -26,7 +26,7 @@
 
 -(CHIService*) getServiceByName:(NSString*) serviceName {
     if(serviceName != nil) {
-            if([[self servicePtrList] con)
+        return ([self servicePtrList][serviceName]);
     }
     return nil;
 }

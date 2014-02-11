@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface CHIService : NSObject
-@property NSDictionary* funcPtrDict;
+@property NSMutableDictionary* funcPtrDict;
 @property (atomic, readwrite, retain) NSString* serviceName;
 
 

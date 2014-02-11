@@ -13,7 +13,7 @@
 {
     self = [super init];
     if (self) {
-        //
+        self.funcPtrDict = [
     }
     return self;
 }
