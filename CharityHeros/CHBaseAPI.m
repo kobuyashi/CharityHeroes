@@ -26,9 +26,9 @@
 
 -(CHIService*) getServiceByName:(NSString*) serviceName {
     if(serviceName != nil) {
-        
-    }else
-        return nil;
+            if([[self servicePtrList] con)
+    }
+    return nil;
 }
 
 
