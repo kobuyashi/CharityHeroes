@@ -23,6 +23,10 @@
 		98BCCDF218A5E2A500D0F88B /* CharityHerosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCCDF118A5E2A500D0F88B /* CharityHerosTests.m */; };
 		98BCCE0218A601A800D0F88B /* CHQuest.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCCE0118A601A800D0F88B /* CHQuest.m */; };
 		98BCCE0518A6032000D0F88B /* CHTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BCCE0418A6032000D0F88B /* CHTask.m */; };
+		C325787318AA02D80017E01C /* CHBaseAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = C325787218AA02D80017E01C /* CHBaseAPI.m */; };
+		C325787618AA02EA0017E01C /* CHIService.m in Sources */ = {isa = PBXBuildFile; fileRef = C325787518AA02EA0017E01C /* CHIService.m */; };
+		C325787A18AA03070017E01C /* CHTestService.m in Sources */ = {isa = PBXBuildFile; fileRef = C325787918AA03070017E01C /* CHTestService.m */; };
+		C325787D18AA04FF0017E01C /* CHIModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C325787C18AA04FF0017E01C /* CHIModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,14 @@
 		98BCCE0118A601A800D0F88B /* CHQuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHQuest.m; sourceTree = "<group>"; };
 		98BCCE0318A6032000D0F88B /* CHTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTask.h; sourceTree = "<group>"; };
 		98BCCE0418A6032000D0F88B /* CHTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTask.m; sourceTree = "<group>"; };
+		C325787118AA02D80017E01C /* CHBaseAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHBaseAPI.h; sourceTree = "<group>"; };
+		C325787218AA02D80017E01C /* CHBaseAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHBaseAPI.m; sourceTree = "<group>"; };
+		C325787418AA02EA0017E01C /* CHIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIService.h; sourceTree = "<group>"; };
+		C325787518AA02EA0017E01C /* CHIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIService.m; sourceTree = "<group>"; };
+		C325787818AA03070017E01C /* CHTestService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTestService.h; sourceTree = "<group>"; };
+		C325787918AA03070017E01C /* CHTestService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTestService.m; sourceTree = "<group>"; };
+		C325787B18AA04FF0017E01C /* CHIModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHIModel.h; sourceTree = "<group>"; };
+		C325787C18AA04FF0017E01C /* CHIModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHIModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,12 +130,14 @@
 		98BCCDCC18A5E2A500D0F88B /* CharityHeros */ = {
 			isa = PBXGroup;
 			children = (
+				C325787718AA02F00017E01C /* Services */,
+				C325787018AA02A40017E01C /* Core */,
+				C325786F18AA01800017E01C /* Controller */,
+				C325786E18AA01650017E01C /* Model */,
+				C325786D18AA01550017E01C /* View */,
 				98BCCDFB18A5FB1300D0F88B /* Quests */,
 				98BCCDD518A5E2A500D0F88B /* CHAppDelegate.h */,
 				98BCCDD618A5E2A500D0F88B /* CHAppDelegate.m */,
-				98BCCDD818A5E2A500D0F88B /* Main.storyboard */,
-				98BCCDDB18A5E2A500D0F88B /* CHViewController.h */,
-				98BCCDDC18A5E2A500D0F88B /* CHViewController.m */,
 				98BCCDDE18A5E2A500D0F88B /* Images.xcassets */,
 				98BCCDCD18A5E2A500D0F88B /* Supporting Files */,
 			);
@@ -168,6 +182,52 @@
 				98BCCE0418A6032000D0F88B /* CHTask.m */,
 			);
 			name = Quests;
+			sourceTree = "<group>";
+		};
+		C325786D18AA01550017E01C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				98BCCDD818A5E2A500D0F88B /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C325786E18AA01650017E01C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C325786F18AA01800017E01C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				98BCCDDB18A5E2A500D0F88B /* CHViewController.h */,
+				98BCCDDC18A5E2A500D0F88B /* CHViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C325787018AA02A40017E01C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C325787118AA02D80017E01C /* CHBaseAPI.h */,
+				C325787218AA02D80017E01C /* CHBaseAPI.m */,
+				C325787418AA02EA0017E01C /* CHIService.h */,
+				C325787518AA02EA0017E01C /* CHIService.m */,
+				C325787B18AA04FF0017E01C /* CHIModel.h */,
+				C325787C18AA04FF0017E01C /* CHIModel.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C325787718AA02F00017E01C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C325787818AA03070017E01C /* CHTestService.h */,
+				C325787918AA03070017E01C /* CHTestService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +331,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C325787618AA02EA0017E01C /* CHIService.m in Sources */,
+				C325787318AA02D80017E01C /* CHBaseAPI.m in Sources */,
 				98BCCDD318A5E2A500D0F88B /* main.m in Sources */,
 				98BCCE0218A601A800D0F88B /* CHQuest.m in Sources */,
 				98BCCE0518A6032000D0F88B /* CHTask.m in Sources */,
+				C325787D18AA04FF0017E01C /* CHIModel.m in Sources */,
 				98BCCDD718A5E2A500D0F88B /* CHAppDelegate.m in Sources */,
+				C325787A18AA03070017E01C /* CHTestService.m in Sources */,
 				98BCCDDD18A5E2A500D0F88B /* CHViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +550,7 @@
 				98BCCDF718A5E2A500D0F88B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98BCCDF818A5E2A500D0F88B /* Build configuration list for PBXNativeTarget "CharityHerosTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +559,7 @@
 				98BCCDFA18A5E2A500D0F88B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
